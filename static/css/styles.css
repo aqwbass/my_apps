@@ -1,0 +1,14 @@
+/* file styles.css ถูก test-script.html import ไปใช้  */
+.main {
+    background-color: #576bc2;
+    margin: auto;
+  }
+  h1 {
+    font-size: 100px;
+    color: yellow;
+  }
+  p {
+    color: white;
+  }
+
+  
