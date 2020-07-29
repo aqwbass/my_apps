@@ -1,0 +1,11 @@
+{% extends 'base.html' %}<!-- ทำการสืบทอดไปยังหน้า base.html--> 
+
+{% block title %}<title>Post details</title> {% endblock title %} <!-- ทำการสืบทอดtag title ไปยังหน้า base.html--> 
+
+{% block content %}<!-- ทำการสืบทอดตั้งแต่หัว content จนถึงท้าย ไปยังหน้า base.html--> 
+   <div class="main" style="text-align: center;">
+        <p>Username is:{{person.username}}</p>
+        <p>Password is:{{person.password}}</p>
+        <p>Email is: {{person.email}}</p>
+    </div>
+{% endblock content %}<!-- ท้าย content--> 

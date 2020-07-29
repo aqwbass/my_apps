@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}<title></title>{% endblock title %}<!-- รับการสืบทอดจาก tag title หน้าต่างๆ--> 
+    <!-- 
+        {{url_for ('static', filename='css/styles.css')}} จะเป็นการเรียกหา part ที่เราจัดเก็บไว้ใน directory
+        วิธีใช้ url_for ('name_directory', filename='sub part in directory')
+    -->
+    <link rel="stylesheet" href="{{url_for ('static', filename='css/styles.css')}}">
+</head>
+
+<body>
+    {% block content %}<!-- รับการสืบทอดจาก หัวcontent ถึงท้ายจากหน้าต่างๆ-->
+
+    {% endblock content %}
+</body>
+
+</html>
